@@ -4,17 +4,17 @@
    ========================================== */
 
 :root {
-  --brand: #3b2a6b;        /* navbar, hero, button */
+  --brand: url('assets/imgs/Purple\ Stars.avif');        /* navbar, hero, button */
   --brand-light: #ece8f6;  /* page background */
-  --accent: #f4b942;       /* step numbers, highlights */
+  --accent: url('assets/imgs/Purple\ Stars.avif');       /* step numbers, highlights */
   --text: #1f1d2b;
   --font: "Poppins", Arial, sans-serif;
 }
 
 body {
   font-family: var(--font);
-  background: var(--brand-light);
-  color: var(--text);
+  background: #6050DC;
+  color: var(--brand-light);
 }
 
 /* ---------- Navbar ---------- */
@@ -28,7 +28,7 @@ body {
 }
 
 .nav-tagline {
-  color: rgba(255, 255, 255, 0.75);
+  color: #fff;
   font-size: 0.9rem;
 }
 
@@ -62,7 +62,7 @@ body {
   height: 36px;
   border-radius: 50%;
   background: var(--accent);
-  color: var(--text);
+  color: var(--brand-light);
   font-weight: 700;
 }
 
@@ -83,17 +83,17 @@ body {
   font-weight: 600;
   padding: 0.75rem;
   border-radius: 10px;
+  transition: transform 0.25s ease-in-out;
 }
 
 .btn-ask:hover,
 .btn-ask:focus-visible {
-  background: var(--accent);
-  color: var(--text);
+  transform: translateY(-5px);
+  color:#fff;
 }
 
 .btn-ask:active,
 .btn-ask:focus {
-  background: var(--brand);
   color: #fff;
 }
 
@@ -125,7 +125,7 @@ body {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background: #1b2a6b;
+  background: url('assets/imgs/Purple\ Stars.avif');
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,5 +166,5 @@ body {
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--brand);
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
