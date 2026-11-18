@@ -31,7 +31,7 @@ function askEightBall() {
 
   if (userQuestion === "") {
     document.getElementById('questionOut').textContent = ''
-    document.getElementById('answer').textContent = "The 8Ball needs a question to work, you absolute failure to society! You are NOTHING but a BUG underneath the foot of the revolutionaries before you. You enjoy the fruits of your ancestors, yet dissapoint them with your lack of basic intelligence."
+    document.getElementById('answer').textContent = "The 8Ball needs a question to work!"
     document.getElementById('answerType').innerHTML = ''
     return
   }
